@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { mainNavBarComponent } from 'src/app/navigation/mainNavBar.component';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    mainNavBarComponent
   ],
   imports: [
     BrowserModule
