@@ -1,3 +1,7 @@
+.header {
+    height: 500px;
+}
+
 .logo {
     height: 44px;
     /* display: block;
@@ -6,7 +10,7 @@
 }
 
 .tagline {
-    color: #ffffff;
+    color: white;
     font-family: Inter,Open Sans,Arial,sans-serif;
     font-size: 10px;
     font-weight: 600;
@@ -14,6 +18,10 @@
 }
 
 .logobox{
-    width: 200px;
+    flex-direction: column;
 background-color: lightblue;
+}
+
+.buttonStyle{
+    text-decoration-color: white;
 }
