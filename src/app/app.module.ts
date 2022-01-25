@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { headerComponent } from 'src/app/header/header.component';
+import { navbarComponent } from 'src/app/header/navbar/navbar.component';
 import { footerComponent } from 'src/app/footer/footer.component';
 
 import { AppComponent } from './app.component';
@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    headerComponent,
+    navbarComponent,
     footerComponent
   ],
   imports: [
