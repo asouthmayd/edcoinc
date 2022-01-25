@@ -1,0 +1,15 @@
+.footerText{
+    color: #999;
+    font-family: Inter,'Open Sans',Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.iconFont{
+    color: #999;
+    font-family: Inter,'Open Sans',Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 24px;
+
+}
