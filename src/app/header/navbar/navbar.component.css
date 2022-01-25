@@ -7,3 +7,11 @@
     margin: 8px 0 0 0;
 }
 
+.menuItemText{
+    color: lightgray;
+    font-family: Inter,'Open Sans',Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 0 -8px;
+}
+
