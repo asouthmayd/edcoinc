@@ -1,3 +1,12 @@
+.header{
+    height: 102px;
+}
+
+.logobox{
+    margin-top: 5px;
+    margin-left: -3px;
+}
+
 .tagline{
     color: lightgray;
     font-size: 10px;
@@ -13,4 +22,8 @@
     font-size: 16px;
     font-weight: 700;
     margin: 0 0 0 -8px;
+}
+
+.endcap{
+    margin-right: 8px;
 }
