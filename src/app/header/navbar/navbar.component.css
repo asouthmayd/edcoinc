@@ -7,6 +7,11 @@
     margin-left: -3px;
 }
 
+.logo{
+    width:"184px";
+    height:"44px";
+}
+
 .tagline{
     color: lightgray;
     font-size: 10px;

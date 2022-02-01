@@ -1,8 +1,16 @@
+.footer{
+    margin-left: 30px;
+}
+
 .footerText{
     color: #999;
     font-family: Inter,'Open Sans',Arial,sans-serif;
     font-size: 16px;
     font-weight: 700;
+}
+
+.spacer{
+    height: 75px;
 }
 
 .iconFont{
@@ -12,4 +20,8 @@
     font-weight: 700;
     margin-left: 24px;
 
+}
+
+.endcap{
+    margin-right: 50px;
 }

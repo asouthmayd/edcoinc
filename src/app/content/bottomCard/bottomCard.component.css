@@ -1,0 +1,21 @@
+.card-bottom{
+    padding: 20px;
+}
+
+.icon-style{
+    color: #f3395c;
+    font-size: 44px;
+}
+
+.card-text-title{
+    color: white;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+    font-size: 24px;
+}
+
+
+.card-text-body{
+    color: white;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+    font-size: 16px;
+}

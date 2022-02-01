@@ -1,0 +1,71 @@
+.carousel-style{
+
+    height: 475px;
+
+}
+
+.banner-card-style{
+    height: 475px;
+}
+
+.banner{
+
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+.text-container{
+
+    position: absolute;
+    object-position: center center;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+
+}
+
+.banner-title{
+
+
+    font-size: 32px;
+    line-height: 1em;
+
+}
+
+.banner-text{
+
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+.banner-btn{
+
+    background-color: #f3395c;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    
+}
+
+.carousel-control{
+
+   
+    align-items: center;
+   
+    color: #fff;
+    font-size: 0;
+    background: rgba(0,0,0,.3);
+    border: 0;
+    padding: 0;
+  
+
+
+}
