@@ -1,0 +1,41 @@
+.carousel-style{
+
+    height: 475px;
+
+}
+
+.banner-card-style{
+    height: 475px;
+}
+
+.banner{
+
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+.text-container{
+
+    position: absolute;
+    object-position: center center;
+
+}
+
+.banner-title{
+
+
+
+}
+
+.banner-text{
+
+
+
+}
+
+.banner-button{
+
+
+    
+}

@@ -2,7 +2,8 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'edco-carousel',
-    templateUrl: 'carouselSlides.component.html'
+    templateUrl: 'mainCarousel.component.html',
+    styleUrls: ['mainCarousel.component.css']
 })
 
 export class carouselSlidesComponent{
