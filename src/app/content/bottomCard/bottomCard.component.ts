@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'edco-bottomCard',
@@ -6,6 +6,14 @@ import { Component } from "@angular/core";
     styleUrls: ['bottomCard.component.css']
 })
 
-export class bottomCardComponent{
+export class bottomCardComponent {
+    @Input() icon: string;
+    @Input() title_text: string;
+    @Input() body_text: string;
 
+    constructor(){
+        this.icon ='glyphicon glyphicon-search icon-style';
+        this.title_text = "Search By Keyword";
+        this.body_text = "Search the entire website to find exactly what you are looking for.";
+    }
 }
