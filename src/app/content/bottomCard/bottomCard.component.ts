@@ -12,8 +12,8 @@ export class bottomCardComponent {
     @Input() body_text: string;
 
     constructor(){
-        this.icon ='glyphicon glyphicon-search icon-style';
-        this.title_text = "Search By Keyword";
-        this.body_text = "Search the entire website to find exactly what you are looking for.";
+        this.icon ='glyphicon glyphicon-remove';
+        this.title_text = "MISSING TEXT_TITLE";
+        this.body_text = "MISSING TEXT_BODY";
     }
 }
