@@ -1,16 +1,5 @@
 <edco-navbar>Loading Header...</edco-navbar>
-<edco-carousel>Loading Slides...</edco-carousel>
 
-<div class="container-fluid bg-dark">
-    <div class="row item-align-center">
-
-        <div class="col-3" *ngFor="let info_card of info_cards">
-            <edco-bottomCard icon={{info_card.icon}} title_text={{info_card.title_text}}
-                body_text={{info_card.body_text}}>
-                Loading...
-            </edco-bottomCard>
-        </div>
-    </div>
-</div>
+<router-outlet></router-outlet>
 
 <edco-footer>Loading Footer...</edco-footer>
