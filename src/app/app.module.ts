@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { navbarComponent } from 'src/app/header/navbar/navbar.component';
-import { footerComponent } from 'src/app/footer/footer.component';
-import { carouselSlidesComponent } from 'src/app/content/mainCarousel/mainCarousel.component';
-import { bottomCardComponent } from 'src/app/content/bottomCard/bottomCard.component';
 
+/*-----Header & Footer-----*/
+import { HeaderComponent } from 'src/app/header/header.component';
+import { FooterComponent } from 'src/app/footer/footer.component';
+
+/*-----Layouts-----*/
 import { AppComponent } from './app.component';
 import { AboutLayoutComponent } from './layouts/about/about-layout.component';
 import { ApplicationSolverLayoutComponent } from './layouts/applicationSolver/applicationSolver-layout.component';
@@ -20,10 +21,21 @@ import { RegisterLayoutComponent } from './layouts/register/register-layout.comp
 import { SearchLayoutComponent } from './layouts/search/search-layout.component';
 import { PrivacyPolicyLayoutComponent } from './layouts/privacyPolicy/privacyPolicy-layout.component';
 
+/*-----Components-----*/
+import { carouselSlidesComponent } from 'src/app/content/mainCarousel/mainCarousel.component';
+import { bottomCardComponent } from 'src/app/content/bottomCard/bottomCard.component';
+import { ProductCardComponent } from './content/productCard/productCard.component';
+import { CustomerSupportCardComponent } from './content/customerSupportCard/customerSupportCard.component';
+import { TrainingCardComponent } from './content/trainingCard/trainingCard.component';
+import { ApplicationCardComponent } from './content/applicationCard/applicationCard.component';
+
 @NgModule({
   declarations: [
     /*-----Main App-----*/
     AppComponent,
+    /*-----Header & Footer-----*/
+    HeaderComponent,
+    FooterComponent,
     /*-----Layouts-----*/
     AboutLayoutComponent,
     ApplicationSolverLayoutComponent,
@@ -37,10 +49,12 @@ import { PrivacyPolicyLayoutComponent } from './layouts/privacyPolicy/privacyPol
     SearchLayoutComponent,
     TrainingLayoutComponent,
     /*-----Components-----*/
-    navbarComponent,
-    footerComponent,
     carouselSlidesComponent,
-    bottomCardComponent
+    bottomCardComponent,
+    ProductCardComponent,
+    CustomerSupportCardComponent,
+    TrainingCardComponent,
+    ApplicationCardComponent
   ],
   imports: [
     BrowserModule,

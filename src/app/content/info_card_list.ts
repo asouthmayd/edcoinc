@@ -6,7 +6,7 @@ export const info_card_list = [
     },
     {
         icon: 'glyphicon glyphicon-globe',
-        title_text: "HOw Do I EDCO Product?",
+        title_text: "How Do I EDCO Product?",
         body_text: "Define your business type to find how you can get EDCO Products."
     },
     {
