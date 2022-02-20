@@ -1,16 +1,13 @@
 <div class="container-fluid">
     <edco-title-bar title_text="Search by Application or Problem" button_route=""></edco-title-bar>
     <div class="row">
-        <div class=" col-9 d-flex flex-wrap">
-            <edco-big-red-button class="btn-padding"></edco-big-red-button>
-            <div class="border-style" *ngFor="let application of applications">
-                <edco-applicationCard application_name={{application.application_name}}
-                    application_img={{application.application_img}}>
-                </edco-applicationCard>
-            </div>
+        <div class="col-9">
+                    <edco-application-grid></edco-application-grid>
         </div>
-        <div class="col min-vh-100 bg-dark ">
-            <app-application-solver-sidebar></app-application-solver-sidebar>
+        <div class="col bg-col">
+            <div class="bg-side  min-vh-100">
+                <app-application-solver-sidebar class="w-100"></app-application-solver-sidebar>
+            </div>
         </div>
     </div>
 

@@ -1,1 +1,10 @@
-TRAINING
+<div class="section-border">
+    <edco-title-bar title_text="Training Videos"></edco-title-bar>
+
+    <div class="d-flex flex-wrap">
+        <div class="card-border" *ngFor="let training of trainings">
+            <edco-trainingCard training_name={{training.training_name}} training_img={{training.training_img}}>
+            </edco-trainingCard>
+        </div>
+    </div>
+</div>

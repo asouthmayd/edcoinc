@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 
 @Component({
@@ -10,5 +10,13 @@ import { Component } from "@angular/core";
 })
 
 export class TrainingCardComponent {
+    @Input() training_name: string;
+    @Input() training_img: string;
+    @Input() training_route: string;
 
+    constructor(){
+        this.training_name ="MISSING training NAME";
+        this.training_img= "glyphicon glyphicon-remove";
+        this.training_route = "";
+    }
 }

@@ -25,12 +25,13 @@ import { PrivacyPolicyLayoutComponent } from './layouts/privacyPolicy/privacyPol
 import { carouselSlidesComponent } from 'src/app/content/mainCarousel/mainCarousel.component';
 import { bottomCardComponent } from 'src/app/content/bottomCard/bottomCard.component';
 import { ProductCardComponent } from './content/productCard/productCard.component';
-import { CustomerSupportCardComponent } from './content/customerSupportCard/customerSupportCard.component';
 import { TrainingCardComponent } from './content/trainingCard/trainingCard.component';
 import { ApplicationCardComponent } from './content/applicationCard/applicationCard.component';
 import { TitleBarComponent } from './content/title-bar/title-bar.component';
 import { BigRedButtonComponent } from './content/big-red-button/big-red-button.component';
 import { ApplicationSolverSidebarComponent } from './content/application-solver-sidebar/application-solver-sidebar.component';
+import { ApplicationGridComponent } from './content/application-grid/application-grid.component';
+import { BuyEdcoBannerComponent } from './content/buy-edco-banner/buy-edco-banner.component';
 
 @NgModule({
   declarations: [
@@ -55,12 +56,13 @@ import { ApplicationSolverSidebarComponent } from './content/application-solver-
     carouselSlidesComponent,
     bottomCardComponent,
     ProductCardComponent,
-    CustomerSupportCardComponent,
     TrainingCardComponent,
     ApplicationCardComponent,
     TitleBarComponent,
     BigRedButtonComponent,
-    ApplicationSolverSidebarComponent
+    ApplicationSolverSidebarComponent,
+    ApplicationGridComponent,
+    BuyEdcoBannerComponent
   ],
   imports: [
     BrowserModule,

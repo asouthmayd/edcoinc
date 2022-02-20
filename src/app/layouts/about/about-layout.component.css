@@ -1,0 +1,33 @@
+.container-style{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    width: 52vw;
+}
+.text-container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    width: 50vw;
+    }
+
+.header-text{
+    font-weight: bolder;
+    font-size: 16px;
+    color: #ccc;
+    font: Open Sans,Arial,sans-serif;
+
+    padding-bottom: 5px;
+}
+
+.body-text{
+    font-size: 16px;
+    color: #ccc;
+    font: Open Sans,Arial,sans-serif;
+
+    padding-bottom: 5px;
+}

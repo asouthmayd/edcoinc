@@ -1,3 +1,25 @@
+.card-bg{
+    background-color: #2e2e2e;
+}
+
 .card-title{
-    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1em;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+    
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-text{
+    font-size: 16px;
+    color: #ccc;
+
+    font-family: Inter,Open Sans,Arial,sans-serif;
+
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 25px;
 }

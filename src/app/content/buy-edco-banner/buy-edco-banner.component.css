@@ -1,0 +1,33 @@
+.card-title{
+    color: #f3395c;
+    line-height: 38px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+    text-align: center;
+
+    padding-bottom: 15px;
+}
+
+.card-text{
+    color: #3e3e3e;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+}
+
+.img-style{
+    height: 300px;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+.card-style{
+    background-color: transparent;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

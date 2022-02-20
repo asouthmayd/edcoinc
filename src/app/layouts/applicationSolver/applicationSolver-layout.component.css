@@ -1,18 +1,15 @@
-.border-style{
-    padding-left: 15px;
-    padding-right: 30px;
-}
-
 .bg-style{
     background-image: url("src/assets/main/background.jpg");
 }
 
-.btn-padding{
-    padding-right: 10px;
-    padding-left: 15px;
+.bg-side{
+    background-image: repeating-linear-gradient(315deg,var(--stripe-wide,#393939),
+                                                        var(--stripe-wide,#393939) 2px,
+                                                        var(--stripe-line,#2f2f2f) 3px,
+                                                        var(--stripe-wide,#393939) 4px,
+                                                        var(--stripe-wide,#393939) 5px);
 }
 
-.column-padding{
-    padding-right: 10px;
-    padding-bottom: 10px;
+.bg-col{
+    padding-right: 30px;
 }

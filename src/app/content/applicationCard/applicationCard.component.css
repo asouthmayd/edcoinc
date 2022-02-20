@@ -1,9 +1,23 @@
 .card-bg{
     background-color: transparent;
+    padding: 0px;
 }
 
 .img-bg{
     background-color: #2e2e2e;
     height: 200px;
+    width: 200px;
+}
+
+.card-text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.card-body{
+    padding-left: 0;
+    padding-right: 0;
     width: 200px;
 }

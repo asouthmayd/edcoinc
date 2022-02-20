@@ -1,0 +1,13 @@
+.border-style{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bg-style{
+    background-image: url("src/assets/main/background.jpg");
+}
+
+.btn-padding{
+    padding-right: 15px;
+    padding-left: 15px;
+}

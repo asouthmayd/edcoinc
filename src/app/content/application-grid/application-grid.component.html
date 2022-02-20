@@ -1,0 +1,8 @@
+<div class="d-flex flex-wrap">
+    <edco-big-red-button class="btn-padding"></edco-big-red-button>
+    <div class="border-style" *ngFor="let application of applications">
+        <edco-applicationCard application_name={{application.application_name}}
+            application_img={{application.application_img}}>
+        </edco-applicationCard>
+    </div>
+</div>
