@@ -1,0 +1,14 @@
+.button-style{
+    height: 260px;
+    width: 425px;
+
+    background-color: #762331;
+}
+
+.button-text{
+
+    font-size: 32px;
+    font-weight: 600;
+    color: white
+
+}

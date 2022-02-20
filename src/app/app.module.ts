@@ -28,6 +28,9 @@ import { ProductCardComponent } from './content/productCard/productCard.componen
 import { CustomerSupportCardComponent } from './content/customerSupportCard/customerSupportCard.component';
 import { TrainingCardComponent } from './content/trainingCard/trainingCard.component';
 import { ApplicationCardComponent } from './content/applicationCard/applicationCard.component';
+import { TitleBarComponent } from './content/title-bar/title-bar.component';
+import { BigRedButtonComponent } from './content/big-red-button/big-red-button.component';
+import { ApplicationSolverSidebarComponent } from './content/application-solver-sidebar/application-solver-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { ApplicationCardComponent } from './content/applicationCard/applicationC
     ProductCardComponent,
     CustomerSupportCardComponent,
     TrainingCardComponent,
-    ApplicationCardComponent
+    ApplicationCardComponent,
+    TitleBarComponent,
+    BigRedButtonComponent,
+    ApplicationSolverSidebarComponent
   ],
   imports: [
     BrowserModule,

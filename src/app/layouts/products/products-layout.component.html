@@ -1,1 +1,9 @@
-PRODUCTS
+<div class="container-fluid">
+    <edco-title-bar title_text="Products" button_route=""></edco-title-bar>
+    <div class="d-flex flex-wrap">
+        <div class="border-style" *ngFor="let product of products">
+            <edco-productCard product_name={{product.product_name}} product_img={{product.product_img}}>
+            </edco-productCard>
+        </div>
+    </div>
+</div>

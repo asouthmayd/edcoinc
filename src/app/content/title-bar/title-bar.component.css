@@ -1,0 +1,21 @@
+.title-style{
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+    color: white;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+}
+
+.button-style{
+    background-color: #3e3e3e;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.boarder-type{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
