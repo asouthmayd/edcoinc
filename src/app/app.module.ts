@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 /*-----Header & Footer-----*/
 import { HeaderComponent } from 'src/app/header/header.component';
@@ -32,6 +33,8 @@ import { BigRedButtonComponent } from './content/big-red-button/big-red-button.c
 import { ApplicationSolverSidebarComponent } from './content/application-solver-sidebar/application-solver-sidebar.component';
 import { ApplicationGridComponent } from './content/application-grid/application-grid.component';
 import { BuyEdcoBannerComponent } from './content/buy-edco-banner/buy-edco-banner.component';
+import { DatabaseTestComponent } from './content/database-test/database-test.component';
+
 
 @NgModule({
   declarations: [
@@ -62,11 +65,13 @@ import { BuyEdcoBannerComponent } from './content/buy-edco-banner/buy-edco-banne
     BigRedButtonComponent,
     ApplicationSolverSidebarComponent,
     ApplicationGridComponent,
-    BuyEdcoBannerComponent
+    BuyEdcoBannerComponent,
+    DatabaseTestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,4 @@
 Main Features
-	Create a layout folder with subfolders containing ts and html files for the following pages:
-		about
-		applicationSolver
-		buyEDCO
-		customerSupport
-		default
-		login
-		privacyPolicy
-		products
-		register
-		search
-		training
-	
-	Created a app-routing.modual.ts and stored routing paths for all of the layout components.
-	Tied all of the routings to the appropriate buttons int the header and footer.
-	Migrated the content components from app.component.html to defualt-layout.component.html.
+	Create a database-test component
+	Tested server connection by pull data with http
+	Added data-test component to app component to test visual display of server datas
