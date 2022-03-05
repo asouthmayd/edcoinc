@@ -1,6 +1,8 @@
-import { Component } from "@angular/core";
-import { ProductModel } from "src/app/content/product.model";
-import { product_list } from "src/app/content/product_list";
+import { Component, OnInit } from "@angular/core";
+import { DatabaseService } from "src/app/content/database/database.service";
+import { ProductModel } from "src/app/models/product.model";
+
+
 
 @Component({
     selector: 'edco-products-layout',
@@ -8,13 +10,20 @@ import { product_list } from "src/app/content/product_list";
     styleUrls: ['products-layout.component.css']
 })
 
-export class ProductsLayoutComponent{
+export class ProductsLayoutComponent implements OnInit{
     products: ProductModel[] = [];
   
-    constructor() {
-      for (var product of product_list) {
-        console.log(product);
-        this.products.push(product);
-      }
+    constructor(private databaseService: DatabaseService) {
+
+    }
+
+    ngOnInit(): void {
+        this.databaseService.getProducts().subscribe(data => {
+          console.log("Fetching product data");
+          for (var product of data) {
+            console.log(product);
+            this.products.push(product);
+          }
+        })
     }
 }

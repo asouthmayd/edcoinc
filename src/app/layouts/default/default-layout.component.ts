@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
-import { info_card_list } from 'src/app/content/info_card_list';
-import { InfoCardModel } from 'src/app/content/info-card.model';
+import { DatabaseService } from "src/app/content/database/database.service";
+import { InfoCardModel } from "src/app/models/info-card.model";
+
 
 @Component({
     selector: 'edco-default-layout',
@@ -9,12 +10,19 @@ import { InfoCardModel } from 'src/app/content/info-card.model';
 })
 
 export class DefaultLayoutComponent{
-    info_cards: InfoCardModel[] = [];
+  infoCards: InfoCardModel[] = [];
   
-    constructor() {
-      for (var info_card of info_card_list) {
-        console.log(info_card);
-        this.info_cards.push(info_card);
-      }
-    }
+  constructor(private databaseService: DatabaseService) {
+
+  }
+
+  ngOnInit(): void {
+      this.databaseService.getInfoCard().subscribe(data => {
+        console.log("Fetching infoCard data");
+        for (var infoCard of data) {
+          console.log(infoCard);
+          this.infoCards.push(infoCard);
+        }
+      })
+  }
 }

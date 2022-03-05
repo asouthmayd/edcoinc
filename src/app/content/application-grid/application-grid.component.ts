@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
-import { ApplicationModel } from '../application.model';
-import { application_list } from '../application_list';
+import { ApplicationModel } from 'src/app/models/application.model';
+import { DatabaseService } from '../database/database.service';
 
 @Component({
   selector: 'edco-application-grid',
@@ -8,14 +8,20 @@ import { application_list } from '../application_list';
   styleUrls: ['./application-grid.component.css']
 })
 export class ApplicationGridComponent{
-
   applications: ApplicationModel[] = [];
   
-  constructor() {
-    for (var application of application_list) {
-      console.log(application);
-      this.applications.push(application);
-    }
+  constructor(private databaseService: DatabaseService) {
+
+  }
+
+  ngOnInit(): void {
+      this.databaseService.getApplications().subscribe(data => {
+        console.log("Fetching application data");
+        for (var application of data) {
+          console.log(application);
+          this.applications.push(application);
+        }
+      })
   }
 
 }

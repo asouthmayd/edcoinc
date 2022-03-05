@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
-import { TrainingModel } from "src/app/content/training.model";
-import { training_list } from "src/app/content/training_list";
+import { TrainingModel } from "src/app/models/training.model";
+import { training_list } from "src/app/models/training_list";
+
 
 @Component({
     selector: 'edco-training-layout',
