@@ -1,3 +1,8 @@
+3/22/21
+	- Deployed to firebase
+	- Changed HTTP calls to AngularFireDatabase calls in the database service
+
+
 Main Features
 	Created a database service component
 	Adjusted the application, product, and info card for loops to use the database service instead of mock lists

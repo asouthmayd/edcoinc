@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "edco-90c55"
+  },
+  "targets": {
+    "edco-90c55": {
+      "hosting": {
+        "edcoinc": [
+          "edco-90c55"
+        ]
+      }
+    }
+  }
+}

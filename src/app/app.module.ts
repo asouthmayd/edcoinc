@@ -34,6 +34,11 @@ import { ApplicationSolverSidebarComponent } from './content/application-solver-
 import { ApplicationGridComponent } from './content/application-grid/application-grid.component';
 import { BuyEdcoBannerComponent } from './content/buy-edco-banner/buy-edco-banner.component';
 import { DatabaseTestComponent } from './content/database-test/database-test.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 @NgModule({
@@ -71,7 +76,9 @@ import { DatabaseTestComponent } from './content/database-test/database-test.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
