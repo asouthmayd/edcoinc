@@ -1,9 +1,40 @@
 3/22/21
-	- Deployed to firebase
-	- Changed HTTP calls to AngularFireDatabase calls in the database service
+ 	- Deployed to firebase
+ 	- Changed HTTP calls to AngularFireDatabase calls in the database service
 
+3/9/21
+ 	- Created a database service component
+ 	- Adjusted the application, product, and info card for loops to use the database service instead of mock lists
+ 	- Reorganized files so all models are now in a models folder
 
-Main Features
-	Created a database service component
-	Adjusted the application, product, and info card for loops to use the database service instead of mock lists
-	Reorganized files so all models are now in a models folder
+3/1/22
+ 	- Create a database-test component
+ 	- Tested server connection by pull data with http
+ 	- Added data-test component to app component to test visual display of server datas
+
+2/15/22
+ 	- Create a layout folder with subfolders containing ts and html files for the following pages:
+ 		- about
+ 		- applicationSolver
+	 	- buyEDCO
+ 		- customerSupport
+ 		- default
+ 		- login
+ 		- privacyPolicy
+ 		- products
+ 		- register
+ 		- search
+ 		- training
+
+ 	- Created a app-routing.modual.ts and stored routing paths for all of the layout components.
+ 	- Tied all of the routings to the appropriate buttons int the header and footer.
+ 	- Migrated the content components from app.component.html to defualt-layout.component.html.
+
+2/8/22
+ 	- Created "info_card_list.ts" to hold data for the "botom_card" components
+ 	- Created "info_card.model.ts" to interface with the "info_card_list.ts" file
+ 	- Added the following attributes as inputs for the the compoent “bottom_card”:
+ 		- icon
+ 		- title_text
+ 		- title_body
+ 	- Created a ngFor loop inside "app.component.html" to programatically create "bottom_card" components using data from "info_card_list.ts"
