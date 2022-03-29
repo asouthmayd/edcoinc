@@ -1,8 +1,14 @@
-3/22/21
+3/29/22
+	- Created register-form component
+	- Added content to register-layout
+	- Added addUser method in the database service
+	- Added capibility for the register-form to submit an user to the database
+
+3/22/22
  	- Deployed to firebase
  	- Changed HTTP calls to AngularFireDatabase calls in the database service
 
-3/9/21
+3/9/22
  	- Created a database service component
  	- Adjusted the application, product, and info card for loops to use the database service instead of mock lists
  	- Reorganized files so all models are now in a models folder
