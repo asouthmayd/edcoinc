@@ -3,6 +3,7 @@ import { Inject, Injectable } from "@angular/core";
 import { ApplicationModel } from "src/app/models/application.model";
 import { InfoCardModel } from "src/app/models/info-card.model";
 import { ProductModel } from "src/app/models/product.model";
+import { UserModel } from "src/app/models/user.model";
 
 
 
@@ -30,5 +31,9 @@ export class DatabaseService{
 
     public getInfoCard(){
         return this.db.list<InfoCardModel>("info-card").valueChanges();
+    }
+
+    public addUser(user:UserModel){
+        this.db.list<UserModel>("users").push(user);
     }
 }

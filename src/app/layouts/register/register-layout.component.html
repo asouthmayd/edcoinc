@@ -2,54 +2,60 @@
     <p class="heading-text">Create Your Account</p>
 </div>
 <div class="container rounded bg-form">
-    <div class="row">
-        <div class="col-12">
-            <label class="label-text">E-Mail Address</label>
-            <input class="lg-input" typr="text" #email_address>
+    <form #userForm>
+        <div class="row">
+            <div class="col-12">
+                <label class="label-text">E-Mail Address</label>
+                <input class="lg-input" type="text" #email_address>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <label class="label-text">Password</label>
-            <input class="sm-input" typr="text" #password>
+        <div class="row">
+            <div class="col-6">
+                <label class="label-text">Password</label>
+                <input class="sm-input" type="text" #password>
+            </div>
+            <div class="col-6">
+                <label class="label-text">Confirm Password</label>
+                <input class="sm-input" type="text" #confirm_password>
+            </div>
         </div>
-        <div class="col-6">
-            <label class="label-text">Confirm Password</label>
-            <input class="sm-input" typr="text" #confirm_password>
+        <div class="row">
+            <div class="col-6">
+                <label class="label-text">First Name</label>
+                <input class="sm-input" type="text" #first_name>
+            </div>
+
+            <div class="col-6">
+                <label class="label-text">Last Name</label>
+                <input class="sm-input" type="text" #last_name>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <label class="label-text">First Name</label>
-            <input class="sm-input" typr="text" #first_name>
+        <div class="row">
+            <div class="col-6">
+                <label class="label-text">Company Name</label>
+                <input class="sm-input" type="text" #company_name>
+            </div>
+            <div class="col-6">
+                <label class="label-text">Job Title</label>
+                <input class="sm-input" type="text" #job_title>
+            </div>
         </div>
 
-        <div class="col-6">
-            <label class="label-text">Last Name</label>
-            <input class="sm-input" typr="text" #last_name>
+        <div class="row">
+            <div class="col-6">
+                <label class="label-text">Phone Number</label>
+                <input class="sm-input" type="text" #phone_number>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <label class="label-text">Company Name</label>
-            <input class="sm-input" type="text" #company_name>
-        </div>
-        <div class="col-6">
-            <label class="label-text">Job Title</label>
-            <input class="sm-input" typr="text" #job_title>
-        </div>
-    </div>
+        <div class="d-flex justify-content-center bttm-div">
+            <button class="reg-btn rounded" type="button"
+                (click)="addUser({firstName:first_name.value,lastName:last_name.value,companyName:company_name.value,jobTitle:job_title.value,email:email_address.value,password:password.value,phoneNumber:phone_number.value})">
+                Register Now
+            </button>
 
-    <div class="row">
-        <div class="col-6">
-            <label class="label-text">Phone Number</label>
-            <input class="sm-input" typr="text" #phone_number>
+            <a class="link-text" routerLink='/login'>Log In</a>
         </div>
-    </div>
-    <div class="d-flex justify-content-center bttm-div">
-        <button class="reg-btn rounded" type="button">Register Now</button>
-        <!-- <button type="button" (click)="log(inputBox.value)"></button> -->
-
-        <a class="link-text" routerLink='/login'>Log In</a>
-    </div>
+    </form>
 </div>
+
+

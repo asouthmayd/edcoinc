@@ -1,4 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { UserModel } from "src/app/models/user.model";
+import { DatabaseService } from "src/app/content/database/database.service";
 
 @Component({
     selector: 'edco-register-layout',
@@ -6,6 +8,18 @@ import { Component } from "@angular/core";
     styleUrls: ['register-layout.component.css']
 })
 
-export class RegisterLayoutComponent{
+export class RegisterLayoutComponent implements OnInit {
+
+    constructor(public db: DatabaseService) { }
+
+    ngOnInit(): void {
+
+    }
+
+    addUser(user: UserModel) {
+        console.log("Adding User");
+        console.log(user);
+        this.db.addUser(user);
+    }
 
 }
