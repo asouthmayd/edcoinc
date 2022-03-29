@@ -39,6 +39,7 @@ import { environment } from '../environments/environment';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { RegisterFormComponent } from './content/register-form/register-form.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     ApplicationSolverSidebarComponent,
     ApplicationGridComponent,
     BuyEdcoBannerComponent,
-    DatabaseTestComponent
+    DatabaseTestComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,

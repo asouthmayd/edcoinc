@@ -1,0 +1,78 @@
+.bg-form{
+    background-image: repeating-linear-gradient(315deg,var(--stripe-wide,#393939),
+                                                        var(--stripe-wide,#393939) 2px,
+                                                        var(--stripe-line,#2f2f2f) 3px,
+                                                        var(--stripe-wide,#393939) 4px,
+                                                        var(--stripe-wide,#393939) 5px);
+
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 67.5vw;
+}
+
+.label-text{
+    color: #ccc;
+    font: 16px/24px Open Sans,Arial,sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.heading-text{
+    color: #fff;
+    font-family: Inter,Open Sans,Arial,sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.lg-input{
+    width: 100%;
+    background: #444;
+    border: 2px solid #2e2e2e;
+    font-size: 24px;
+    padding: 6px 12px;
+}
+
+.sm-input{
+    width: 100%;
+    background: #444;
+    border: 2px solid #2e2e2e;
+    font-size: 24px;
+    padding: 6px 12px;
+}
+
+.reg-btn{
+    background-color: #762331;
+    background-color: #f3395c;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.link-text{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    padding-right: 13px;
+}
+
+.bttm-div{
+    padding-top: 30px;
+}
