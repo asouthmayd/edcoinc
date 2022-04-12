@@ -1,3 +1,7 @@
+4/12/22
+	- Added an authentication service
+	- Created a form to add a user to the authentication table
+
 3/29/22
 	- Created register-form component
 	- Added content to register-layout
