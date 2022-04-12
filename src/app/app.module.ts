@@ -40,6 +40,7 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { RegisterFormComponent } from './content/register-form/register-form.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { RegisterFormComponent } from './content/register-form/register-form.com
     ApplicationGridComponent,
     BuyEdcoBannerComponent,
     DatabaseTestComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,

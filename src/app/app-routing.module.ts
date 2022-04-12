@@ -12,6 +12,7 @@ import { SearchLayoutComponent } from './layouts/search/search-layout.component'
 import { LoginLayoutComponent } from './layouts/login/login-layout.component';
 import { RegisterLayoutComponent } from './layouts/register/register-layout.component';
 import { PrivacyPolicyLayoutComponent } from './layouts/privacyPolicy/privacyPolicy-layout.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes: Routes = [
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'keyword-search', component: SearchLayoutComponent },
   { path: 'login', component: LoginLayoutComponent },
   { path: 'register', component: RegisterLayoutComponent },
-  { path: 'privacy-policy', component: PrivacyPolicyLayoutComponent }
+  { path: 'privacy-policy', component: PrivacyPolicyLayoutComponent },
+  {path: 'auth', component: AuthenticationComponent}
 
 
 ]
